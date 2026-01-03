@@ -14,6 +14,9 @@ public class Main {
         MyBean2 myBean2 = context.getBean(MyBean2.class);
         myBean2.getMyBean().hi();
 
+        Person bean = context.getBean(Person.class);
+        System.out.println(bean);
+
         context.close();
     }
 }
