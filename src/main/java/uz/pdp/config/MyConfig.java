@@ -10,7 +10,7 @@ public class MyConfig {
     /// maxsus calssni elon qilish uchun method hosil qilamiz va unga @Bean annotatsiyasini beramiz
 
 
-    @Bean /// MyBean ni maxsus class deb elon qildik
+    @Bean(name = "myBean", initMethod = "init",destroyMethod = "destroy") /// MyBean ni maxsus class deb elon qildik
     public MyBean myBean() { /// oddiy class
         return new MyBean();
     }
