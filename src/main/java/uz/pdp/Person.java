@@ -1,5 +1,10 @@
 package uz.pdp;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
 public class Person {
     private String name;
     private int age;
